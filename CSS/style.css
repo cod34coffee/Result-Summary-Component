@@ -1,0 +1,175 @@
+body{
+    background: whitesmoke;
+}
+
+.bodyShape{
+    position: relative;
+    height: 108vh;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.topMobileView{
+    position: relative;
+background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);
+border-radius: 0px 0px 30px 30px;
+height: 55vh;
+}
+
+.innerBluePart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 23px;
+    position: absolute;
+    width: 254px;
+    height: 292px;
+    left: 0px;
+    top: 32px;
+}
+
+.yourResultsTitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+    letter-spacing: -0.01em;
+
+    color: #CAC0FF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.blueInnerCircle{
+    width: 144px;
+    height: 139px;
+    gap: 45px;
+    background: linear-gradient(180deg, #4923D0 0%, #4734F0 100%);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    /* Inside auto layout */
+    display: block;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.circleTextOne{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 21px;
+    /* identical to box height, or 39% */
+    text-align: center;
+    top: 45px;
+    color: #FFFFFF;
+position: relative;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.circleTextTwo{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
+    /* identical to box height, or 140% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    width: 48px;
+    height: 21px;
+    
+    color: #786AFD;
+    position: relative;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.bottomInnerBlueText{
+    order: 1;
+}
+
+.greatText{
+    width: 62px;
+    height: 21px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 21px;
+    /* identical to box height, or 91% */
+    position: relative;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.summaryText{
+    width: 254px;
+    height: 42px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    /* or 140% */
+
+    text-align: center;
+
+    color: #B8B8FF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.whiteBottomPart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 19px;
+
+    position: absolute;
+    width: 317px;
+    height: 403px;
+    left: 28px;
+    top: 379px;
+}
