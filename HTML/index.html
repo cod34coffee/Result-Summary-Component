@@ -23,8 +23,9 @@
             <div class="innerBluePart col-12">
                 <p class="yourResultsTitle">Your Results</p>
                 <div class="blueInnerCircle row">
-                    <p class="circleTextOne col-12">#</p>
-                    <p class="circleTextTwo col-12">of #</p>
+                    <!--Need to do Js for this, may have to do math-->
+                    <!--<p class="circleTextOne col-12">#</p>
+                    <p class="circleTextTwo col-12">of #</p>-->
                 </div>
                 <div class="bottomInnerBlueText">
                     <p class="greatText col-12">Great</p>
@@ -37,11 +38,23 @@
                 </div>
             </div>
         </div>
+        <!--Testing new way here, the inner line style is temp-->
         <div class="whiteBottomPart col-s-12 col-md-6">
             <p class="wordSummary">Summary</p>
-            <div class="reactionResults col-s-12">
+            <div class="allResultsHereDiv"></div>
+            <a href="#" class="continueBtn col-s-12">Continue</a>
+        </div>
 
-            </div>
+
+        <!--This is the first way I was going to try-->
+        <!--<div class="whiteBottomPart col-s-12 col-md-6">
+            <p class="wordSummary">Summary</p>
+            <div class="reactionResults col-s-12">-->
+                <!--I need to display the inner parts of this sections, but I need the data info to be displayed here as well.-->
+                <!--I need to display in a row inside this colorful div "the icon, the title, the score(from the data.json)/100"-->
+                <!--I want to do the HTML and the CSS in the index.js file and attach it to this div(reactionResults) to display the info along with its data-->
+
+          <!--  </div>
             <div class="memoryResults col-s-12">
 
             </div>
@@ -52,11 +65,16 @@
 
             </div>
             <a class="continueBtn col-s-12" href="#">Continue</a>
-        </div>
+        </div>-->
 
     </div>
 
-
+    <!--Script from Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--Script from the index.js file so that the info can be displayed on this page.-->
+    <script src="/JS/index.js"></script>
 
 
 </body>
+</html>
