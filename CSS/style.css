@@ -4,7 +4,7 @@ body{
 
 .bodyShape{
     position: relative;
-    height: 118vh;
+    height: 128vh;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     background: white;
     margin-left: 10px;
@@ -58,7 +58,7 @@ height: 55vh;
 .blueInnerCircle{
     width: 144px;
     height: 139px;
-    gap: 45px;
+    gap: 35px;
     background: linear-gradient(180deg, #4923D0 0%, #4734F0 100%);
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.15);
     border-radius: 100px;
@@ -67,6 +67,8 @@ height: 55vh;
     flex: none;
     order: 1;
     flex-grow: 0;
+    justify-content: center;
+    padding-top:9px;
 }
 
 .circleTextOne{
@@ -201,6 +203,9 @@ height: 55vh;
     flex: none;
     order: 1;
     flex-grow: 0;
+    margin-bottom: 10px;
+    height: 47px;
+
 }
 
 .memoryResults{
@@ -212,6 +217,9 @@ height: 55vh;
     flex: none;
     order: 2;
     flex-grow: 0;
+    margin-bottom: 10px;
+    height: 47px;
+
 }
 .verbalResults{
     display: flex;
@@ -222,6 +230,9 @@ height: 55vh;
     flex: none;
     order: 3;
     flex-grow: 0;
+    height: 47px;
+
+    margin-bottom: 10px;
 }
 
 .visualResults{
@@ -233,16 +244,26 @@ height: 55vh;
     flex: none;
     order: 4;
     flex-grow: 0;
+    margin-bottom: 20px;
+    height: 47px;
 }
 
-.textLayoutPart{
+
+.textlayoutPart{
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0px;
-    position: relative;
-    flex: none;
+    gap: 59px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
 }
 
+.textlayoutPart .visualResults{
+    gap: 100px;
+}
 
 
 
@@ -294,15 +315,18 @@ height: 55vh;
 
 
 @media(min-width:768px){
-   
+    body{
+padding: 9%;     
+   position: absolute;
+    }
 
     .bodyShape{
-        position: relative;
+        position: absolute;
         width: 613px;
         height: 428px;
         background: #FFFFFF;
         border-radius: 27px;
-    }
+ }
 
     .topMobileView{
         position: relative;
@@ -386,7 +410,7 @@ height: 55vh;
 
         background: #FFF7F4;
         border-radius: 8px;
-
+        margin-bottom: 10px;
         flex: none;
         order: 1;
         flex-grow: 0;
@@ -405,7 +429,7 @@ height: 55vh;
         border-radius: 8px;
         
         /* Inside auto layout */
-        
+        margin-bottom: 10px;
         flex: none;
         order: 0;
         flex-grow: 0;
@@ -425,7 +449,7 @@ height: 55vh;
         border-radius: 8px;
 
         /* Inside auto layout */
-
+        margin-bottom: 10px;
         flex: none;
         order: 0;
         flex-grow: 0;
@@ -440,7 +464,7 @@ height: 55vh;
         
         width: 241px;
         height: 49px;
-        
+        margin-bottom: 10px;
         background: #F3F3FD;
         border-radius: 8px;
         
@@ -472,5 +496,22 @@ height: 55vh;
         flex: none;
         order: 1;
         flex-grow: 0;
+    }
+}
+
+@media(max-width: 767.98px){
+    .verbalResults, .visualResults, .memoryResults, .reactionResults{
+        margin-bottom: 15px;
+        height: 57px;
+    }
+    .textlayoutPart{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 216px;
+        align-items: center;
+        justify-content: center;
+
     }
 }

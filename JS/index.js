@@ -44,11 +44,11 @@ answersArray.forEach(function(singleAnswerObjects){
     htmlCode +
         //Creating the html and css designs of the inner part of the divs inside these two = ``,
       `
-      <div class="${singleAnswerObjects.className} col-s-12 mb-3" style = "height: 47px;">
+      <div class="${singleAnswerObjects.className} col-s-12">
       <!--I need to display the inner parts of this sections, but I need the data info to be displayed here as well.-->
       <!--I need to display in a row inside this colorful div "the icon, the title, the score(from the data.json)/100"-->
       <!--I want to do the HTML and the CSS in the index.js file and attach it to the div(allResultsHereDiv) to display the info along with its data-->
-          <div class = "textlayoutPart">
+          <div class = "textlayoutPart col-s-12">
               <span class = "iconAndTitle" style = "color:${singleAnswerObjects.textColor};"><img src="${singleAnswerObjects.icon}" style = "width: 17.67px; height: 17px;" alt=""> ${singleAnswerObjects.category}</span>
               <span class="resultNumbersData">${singleAnswerObjects.score}<span style="color:rgba(148, 157, 161, 1)"> / 100</span></span>
           </div>
