@@ -1,7 +1,19 @@
 
-// There are 4 items inside the array, each item is an object with 3 properties. A category, score, icon.
+
+//This is the array that was received in the data.json file. I placed it in this index.js file.
+//This array is called "answersArray"
+// Info on arrays are below.
+// To learn more about the array and objects and properties check out the site below.
+//To learn about arrays here = https://www.w3schools.com/js/js_arrays.asp
+// To read on Objects here = https://www.w3schools.com/js/js_objects.asp
+// To read about the JS Array forEach() here = https://www.w3schools.com/js/js_array_iteration.asp
+
+// An example site that I looked at here = https://codesandbox.io/s/dynamic-javascript-cards-forked-uddcrr?file=/src/index.js
+
 
 const answersArray = [
+  //The goal is to get the items in this list to display their values in my HTML files
+  //so that they can display on the screen.
       {
         id: 0,
         category: "Reaction",
@@ -36,30 +48,26 @@ const answersArray = [
       }
 ];
 
-let htmlCode = ``;
 
-answersArray.forEach(function(singleAnswerObjects){
+let htmlArrayCode = ``;
 
-  htmlCode =
-    htmlCode +
+answersArray.forEach(function(theArrayDisplay){
+
+  htmlArrayCode =
+    htmlArrayCode +
         //Creating the html and css designs of the inner part of the divs inside these two = ``,
       `
-      <div class="${singleAnswerObjects.className} col-s-12">
-      <!--I need to display the inner parts of this sections, but I need the data info to be displayed here as well.-->
-      <!--I need to display in a row inside this colorful div "the icon, the title, the score(from the data.json)/100"-->
-      <!--I want to do the HTML and the CSS in the index.js file and attach it to the div(allResultsHereDiv) to display the info along with its data-->
+      <div class="${theArrayDisplay.className} col-s-12">
           <div class = "textlayoutPart col-s-12">
-              <span class = "iconAndTitle" style = "color:${singleAnswerObjects.textColor};"><img src="${singleAnswerObjects.icon}" style = "width: 17.67px; height: 17px;" alt=""> ${singleAnswerObjects.category}</span>
-              <span class="resultNumbersData">${singleAnswerObjects.score}<span style="color:rgba(148, 157, 161, 1)"> / 100</span></span>
+              <span class = "iconAndTitle" style = "color:${theArrayDisplay.textColor};"><img src="${theArrayDisplay.icon}" style = "width: 17.67px; height: 17px;" alt=""> ${theArrayDisplay.category}</span>
+              <span class="resultNumbersData">${theArrayDisplay.score}<span style="color:rgba(148, 157, 161, 1)"> / 100</span></span>
           </div>
-  
-
       </div>
         
-      
       `;
 
 });
 
+//This attaches it to the div "allResultsHereDiv" in the HTML file index.html
 const answerBoxes = document.querySelector(".allResultsHereDiv");
-answerBoxes.innerHTML = htmlCode;
+answerBoxes.innerHTML = htmlArrayCode;
