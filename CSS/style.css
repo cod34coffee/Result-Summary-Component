@@ -1,7 +1,21 @@
-body{
-    background: whitesmoke;
+/* The styling was done by doing the smaller screen size first, then the larger ones. */
+/* This style.css file was placed in the index.html heading. */
+
+/* This is the full body of the screen part, and also the part that does the changing color effect. */
+/* To find out more info on how to do the changing color background check out this site I went to.*/
+/* The site is listed here = https://www.w3schools.com/cssref/tryit.php?filename=trycss_animatable */
+.bodybackgroundColors{
+    background-color: #b20023;
+    animation: colorMove 5s infinite;
+    
+}
+@keyframes colorMove {
+    from{ background-color: #b20023;}
+    to{background-color: #820c58;}
 }
 
+
+/* This begins the body code of the box that contains the solution */
 .bodyShape{
     position: relative;
     height: 128vh;
@@ -12,14 +26,18 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
+
 }
 
+/*This is for the blue section */
 .topMobileView{
-    position: relative;
+position: relative;
 background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);
 border-radius: 0px 0px 30px 30px;
 height: 55vh;
+
 }
+
 
 .innerBluePart{
     display: flex;
@@ -55,6 +73,8 @@ height: 55vh;
     flex-grow: 0;
 }
 
+
+/*This is for the inner darker blue section */
 .blueInnerCircle{
     width: 144px;
     height: 139px;
@@ -71,7 +91,8 @@ height: 55vh;
     padding-top:9px;
 }
 
-.circleTextOne{
+/* I put these two together since they share this same information */
+.circleTextOne, .circleTextOne2{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -165,7 +186,9 @@ height: 55vh;
     flex-grow: 0;
 }
 
-.whiteBottomPart{
+
+/* This is where the white section of the box is */
+.whiteBottomPart, .whiteBottomPart2{
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -178,6 +201,7 @@ height: 55vh;
     padding-right: 28px;
     top: 379px;
 }
+/* This is for the word "Summary" */
 .wordSummary{
     width: 79px;
     height: 21px;
@@ -194,6 +218,8 @@ height: 55vh;
     order: 0;
     flex-grow: 0;
 }
+
+/* This is for the styling of the different results. They are conected to the JavaScript file index.js */
 .reactionResults{
     display: flex;
     flex-direction: row;
@@ -283,6 +309,7 @@ height: 55vh;
     font-size: 15px;
 }
 
+/*The continue button including the hover/focus action */
 .continueBtn{
     flex-direction: column;
     align-items: center;
@@ -314,10 +341,33 @@ height: 55vh;
 }
 
 
+
+/* This helps to make sure that the lottie picture shows and is styled
+for the screen sizes 1200 and above */
+@media(min-width:1200px){
+    .lottiePic{
+        display: block;
+        float: right;
+        position: relative;
+        left: 580px;
+        right: 50px;
+    }
+}
+
+/*This helps to make sure that the lottie picture, animation picture, doesn't show below 
+1200.98px and below. So only visible on the lg and above screens */
+@media(max-width:1199.98px){
+    .lottiePic{
+        display: none;
+    }
+}
+
+
+/*This helps change the layout of everything after the screen size reaches 768px */
 @media(min-width:768px){
     body{
-padding: 9%;     
-   position: absolute;
+        padding: 9%;     
+        position: absolute;
     }
 
     .bodyShape{
@@ -326,7 +376,9 @@ padding: 9%;
         height: 428px;
         background: #FFFFFF;
         border-radius: 27px;
- }
+    }
+
+
 
     .topMobileView{
         position: relative;
@@ -422,13 +474,9 @@ padding: 9%;
         align-items: flex-start;
         padding: 13px 18px;
         gap: 10px;
-        
-        
-        
         background: linear-gradient(0deg, #FEFAEF, #FEFAEF), linear-gradient(0deg, #FEFAEF, #FEFAEF), #FEFAEF;
         border-radius: 8px;
         
-        /* Inside auto layout */
         margin-bottom: 10px;
         flex: none;
         order: 0;
@@ -447,8 +495,6 @@ padding: 9%;
 
         background: linear-gradient(0deg, #F2FBFA, #F2FBFA), #F2FBFA;
         border-radius: 8px;
-
-        /* Inside auto layout */
         margin-bottom: 10px;
         flex: none;
         order: 0;
@@ -467,16 +513,11 @@ padding: 9%;
         margin-bottom: 10px;
         background: #F3F3FD;
         border-radius: 8px;
-        
-        /* Inside auto layout */
-        
+                
         flex: none;
         order: 1;
         flex-grow: 0;
     }
-
-
-    
 
     .continueBtn{
         display: flex;
@@ -490,15 +531,13 @@ padding: 9%;
         top: 10px;
         background: #303B57;
         border-radius: 30px;
-
-        /* Inside auto layout */
-
         flex: none;
         order: 1;
         flex-grow: 0;
     }
 }
 
+/* This helps to style some items while the screen is under the 767.98 size. */
 @media(max-width: 767.98px){
     .verbalResults, .visualResults, .memoryResults, .reactionResults{
         margin-bottom: 15px;
