@@ -35,9 +35,9 @@ Users should be able to:
 ![](./assets/images/screencapture-127-0-0-1-5500-HTML-index-html-2023-03-28-05_37_36.png)
 ![](./assets/images/screencapture-127-0-0-1-5500-HTML-index-html-2023-03-28-05_37_48.png)
 
-### Links 
+### Links *
 
-- Live Site URL: [Result Summary Component](https://cod34coffee.github.io/Result-Summary-Component/)
+- Live Site URL: coming
 
 ## My process 
 I started by using Figma to assist me with the styling while trying to make sure that I lined everything up as close to the photo as possible. Afterwards, I began building it and designing from the small screen size first and then to the large. The last few steps were adding the JavaScript and the extra fun add on things to learn a little more things along the way. I wanted to help anyone else who looks at the code by adding notes that include the sites I looked at to help me. 
@@ -68,9 +68,8 @@ Alot of the more specific resources that I used are listed throughout the code, 
 - [Bootstrap 5](https://www.bootstrap.com) - This is an amazing site which helped me better understand the breaking points and how to make elements appear and disappear on different breaking points. 
 
 
-## Author
+## Author *
 
-- Website - [Ka'Eatta Rankins](https://www.your-site.com)
 - Frontend Mentor - [@cod34coffee](https://www.frontendmentor.io/profile/cod34coffee)
 
 
