@@ -1,1 +1,105 @@
-<h1>Hello<h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="iso-8859-2">
+    <meta http-equiv="Content-Type" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheet that was created in the style.css folder.-->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <!--W3school CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Result Summary</title>
+</head>
+
+<!------------------------------------------------>
+
+<!--Everything inside of this body tag is what should be displayed on the screen.-->
+
+<body class="bodybackgroundColors">
+    
+    <div class="bodyShape col-s-12">
+        <div class="topMobileView col-s-12 col-md-6" id="topMobileView">
+            <div class="innerBluePart col-12">
+                <p class="yourResultsTitle">Your Results</p>
+
+                <!--This div is for creating the inner circle where the total average is listed.-->
+                <div class="blueInnerCircle row">
+
+                    <!--The circleTextOne is where the Total avergae is displayed.-->
+                    <!--The total average was retrieved from the javascript index.js page and the info was attached to div(circleTextOne) to be displayed.-->
+                    <p class="circleTextOne col-12" id="circleTextOne"></p>
+                    <p class="circleTextTwo col-12">of 100</p>
+                </div>
+
+                <!--These divs below are the bottom part of the blue part where the different version of the summary text is.-->
+                <div class="bottomInnerBlueText">
+                    <p class="greatText col-12">Great</p>
+
+                    <!--This version of the summary text is for the smaller breaking point and should only display when the screen has reached a smaller size.-->
+                    <!--The <br> helps me put breaks into the sentence wherever I want.-->
+                    <p class="summaryText col-s-12 col-md-12">You scored higher than 65% of the<br>
+                        people who have taken these tests.
+                    </p>
+
+                    <!--This version of the summary text is for the bigger breaking points which is shown during the time the screen is wider and the desktop version of the solution is present.-->
+                    <!--The <br> helps me put breaks into the sentence wherever I want.-->
+                    <p class="summaryText2 col-12">You scored higher than 65% of<br> the
+                        people who have taken<br> these tests.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--The inner part list area for the results per section part is following.-->
+        <div class="whiteBottomPart col-s-12 col-md-6">
+            <p class="wordSummary">Summary</p>
+
+            <!--This is the div that is attached to the index.js file. It renders the info from the index.js file to display in this div(allResultsHereDiv)-->
+            <div class="allResultsHereDiv"></div>
+
+            <!--This is the continue button with the simple hover action of changing colors.-->
+            <a href="#" class="continueBtn col-s-12">Continue</a>
+        </div>
+
+    </div>
+    <div class="col-12 lottiePic">
+    <!--LottieFiles.com lottie created by Luc Godfroid link to find it is here = https://lottiefiles.com/88822-process-results-->
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_gvofx8ha.json" class=""  background="transparent"  speed="1"  style="width: 95%; height: auto;"  loop autoplay></lottie-player>
+    </div>
+    
+
+    <!------------------------------------------------------->
+
+    <!--Below are where all of the scripts are located.-->
+
+    <!--Script for the lottie from LottieFiles.com link to it here = https://lottiefiles.com/88822-process-results-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <!--Script from Bootstrap to find this info go to this link here = https://getbootstrap.com/docs/5.2/getting-started/introduction/-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <!--Script from the index.js file so that the info can be displayed on this page.-->
+    <script src="/JS/index.js"></script>
+    
+    <!--Script to find the average score. Resource used was W3schools Array Reduce() for adding and rounding the numbers the link here https://www.w3schools.com/jsref/jsref_reduce.asp -->
+    <script>
+        
+        const numbers = [80, 92, 61, 72];
+
+        document.getElementById("circleTextOne").innerHTML = Math.round(numbers.reduce(getSum, 0)/4);
+
+        function getSum(total, num) {
+        return total + Math.round(num);
+        }
+    </script>
+     
+</body>
+</html>
