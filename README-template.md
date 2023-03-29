@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links *
 
-- Live Site URL: coming
+- Live Site URL: [ResultSummarySolution] (https://result-summary-component-delta.vercel.app/)
 
 ## My process 
 I started by using Figma to assist me with the styling while trying to make sure that I lined everything up as close to the photo as possible. Afterwards, I began building it and designing from the small screen size first and then to the large. The last few steps were adding the JavaScript and the extra fun add on things to learn a little more things along the way. I wanted to help anyone else who looks at the code by adding notes that include the sites I looked at to help me. 
