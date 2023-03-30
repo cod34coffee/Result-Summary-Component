@@ -69,7 +69,7 @@ Alot of the more specific resources that I used are listed throughout the code, 
 
 
 ## Author *
-
+-Ka'Eatta Rankins
 - Frontend Mentor - [@cod34coffee](https://www.frontendmentor.io/profile/cod34coffee)
 
 
