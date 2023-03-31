@@ -4,10 +4,10 @@
 /* This is the full body of the screen part, and also the part that does the changing color effect. */
 /* To find out more info on how to do the changing color background check out this site I went to.*/
 /* The site is listed here = https://www.w3schools.com/cssref/tryit.php?filename=trycss_animatable */
+
+
 .bodybackgroundColors{
     background-color: rgb(244, 244, 244);
-    
-    
 }
 
 
@@ -17,6 +17,7 @@
     position: relative;
     height: 850px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    
     background: white;
     margin-left: 10px;
     margin-right: 10px;
