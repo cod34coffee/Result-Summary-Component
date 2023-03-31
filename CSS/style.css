@@ -5,20 +5,17 @@
 /* To find out more info on how to do the changing color background check out this site I went to.*/
 /* The site is listed here = https://www.w3schools.com/cssref/tryit.php?filename=trycss_animatable */
 .bodybackgroundColors{
-    background-color: #b20023;
-    animation: colorMove 5s infinite;
+    background-color: rgb(244, 244, 244);
+    
     
 }
-@keyframes colorMove {
-    from{ background-color: #b20023;}
-    to{background-color: #820c58;}
-}
+
 
 
 /* This begins the body code of the box that contains the solution */
 .bodyShape{
     position: relative;
-    height: 128vh;
+    height: 850px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     background: white;
     margin-left: 10px;
@@ -33,10 +30,18 @@
 /*This is for the blue section */
 .topMobileView{
 position: relative;
-background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);
+/*The line below is my original background color of the blue box*/
+/*background: linear-gradient(180deg, #6743FF 0%, #312CEA 100%);*/
+background-color: blue;
+animation: colorMove2 5s infinite;
 border-radius: 30px 30px 30px 30px;
-height: 55vh;
+height: 365px;
 
+}
+@keyframes colorMove2{
+    from{background-color: blue;}
+    to{background-color: green;}
+ 
 }
 
 
@@ -80,7 +85,7 @@ height: 55vh;
     width: 144px;
     height: 139px;
     gap: 35px;
-    background: linear-gradient(180deg, #4923D0 0%, #4734F0 100%);
+    background-color: rgba(0, 0, 0, 0.055);
     box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.15);
     border-radius: 100px;
     /* Inside auto layout */
@@ -393,7 +398,7 @@ for the screen sizes 1200 and above */
         width: 165px;
         height: 162px;
 
-        background: linear-gradient(180deg, #4923D0 0%, #4734F0 100%);
+        background-color:  rgba(0, 0, 0, 0.055);
         box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.15);
         border-radius: 100px;
         flex: none;
