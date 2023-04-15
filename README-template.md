@@ -65,7 +65,7 @@ My goal is to continue to do projects to better my skills and learn more about J
 Alot of the more specific resources that I used are listed throughout the code, but below is a brief overview.
 
 - [w3school.com](https://www.w3schools.com) - This helped me for with finding the average of a number while using javaScript. 
-- [Bootstrap 5](https://www.bootstrap.com) - This is an amazing site which helped me better understand the breaking points and how to make elements appear and disappear on different breaking points. 
+- [Bootstrap 5](https://getbootstrap.com/) - This is an amazing site which helped me better understand the breaking points and how to make elements appear and disappear on different breaking points. 
 
 
 ## Author *
