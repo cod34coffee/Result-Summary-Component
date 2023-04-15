@@ -47,7 +47,7 @@ I started by using Figma to assist me with the styling while trying to make sure
 
 - HTML
 - CSS
-- [Bootstrap](https://bootstrap.com)
+- [Bootstrap](https://getbootstrap.com)
 - Mobile-first workflow
 - JavaScript
 - [Figma](https://figma.com/) - To help with the styles
