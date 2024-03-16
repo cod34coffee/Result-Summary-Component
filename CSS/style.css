@@ -99,7 +99,7 @@ height: 365px;
 }
 
 /* I put these two together since they share this same information */
-.circleTextOne, .circleTextOne2{
+.circleTextOne{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -195,7 +195,7 @@ height: 365px;
 
 
 /* This is where the white section of the box is */
-.whiteBottomPart, .whiteBottomPart2{
+.whiteBottomPart{
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -386,7 +386,7 @@ for the screen sizes 1200 and above */
     }
 
 
-
+/*@*/
     .topMobileView{
         position: relative;
         width: 100%;
